@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search } from '@material-ui/icons'
+import SearchIcon from '@mui/icons-material/Search'
 import { Container, Wrapper, Left, Right, Center, Language, SearchContainer, Input, Logo } from './Navbar.style'
 
 const Navbar: React.FC = (): JSX.Element => {
@@ -9,7 +9,7 @@ const Navbar: React.FC = (): JSX.Element => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input /> <Search />
+            <Input /> <SearchIcon />
           </SearchContainer>
         </Left>
         <Center>
