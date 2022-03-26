@@ -1,6 +1,21 @@
 import React from 'react'
+
 import SearchIcon from '@mui/icons-material/Search'
-import { Container, Wrapper, Left, Right, Center, Language, SearchContainer, Input, Logo } from './Navbar.style'
+import Badge from '@mui/material/Badge'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
+
+import {
+  Container,
+  Wrapper,
+  Left,
+  Right,
+  Center,
+  Language,
+  SearchContainer,
+  Input,
+  Logo,
+  MenuItem,
+} from './Navbar.style'
 
 const Navbar: React.FC = (): JSX.Element => {
   return (
@@ -9,13 +24,21 @@ const Navbar: React.FC = (): JSX.Element => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input /> <SearchIcon />
+            <Input /> <SearchIcon style={{ color: 'gray', fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
           <Logo>Artisfy</Logo>
         </Center>
-        <Right>Right</Right>
+        <Right>
+          <MenuItem>Register</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+          </MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   )
