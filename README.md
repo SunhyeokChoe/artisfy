@@ -1,6 +1,6 @@
-# covid19-client
+# Artisfy
 
-covid19-client
+E-Commerce Shopping Web Application using Reactjs, Reduxjs, Nodejs and MongoDB.
 
 # Getting Started with Create React App
 
