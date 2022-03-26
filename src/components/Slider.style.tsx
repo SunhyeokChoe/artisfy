@@ -8,11 +8,12 @@ export const Container = styled.div`
   position: relative;
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ slideIndex: number }>`
   display: flex;
 
   height: 100%;
-  transform: translateX(0vw);
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
+  transition: all 1.5s ease;
 `
 
 export const Slide = styled.div<{ bg: string }>`
@@ -20,7 +21,7 @@ export const Slide = styled.div<{ bg: string }>`
   width: 100vw;
   height: 100vh;
   align-items: center;
-  background-color: #${(props) => props.bg};
+  background-color: ${(props) => props.bg};
 `
 export const ImgContainer = styled.div`
   flex: 1;
