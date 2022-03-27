@@ -1,8 +1,6 @@
 import { useState, useCallback } from 'react'
 
-type ReturnTypes = [number, (...args: string[]) => void]
-
-const useSlider = (initialIndex: number, slideArrLength: number): ReturnTypes => {
+const useSlider = (initialIndex: number, slideArrLength: number): [number, (args: string) => void] => {
   const [slideIndex, setSlideIndex] = useState(initialIndex)
   const slideMaxLength: number = slideArrLength - 1
 

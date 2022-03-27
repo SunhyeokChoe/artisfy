@@ -68,6 +68,10 @@ export const Arrow = styled.div<{ direction: string }>`
   position: absolute;
   cursor: pointer;
   opacity: 0.5;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
   top: 0;
   bottom: 0;
   margin: auto;
