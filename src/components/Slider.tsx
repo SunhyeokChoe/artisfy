@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined'
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
 import { sliderItems, ISliderItems } from 'constants/fake/data'
+import useSlider from 'hooks/useSlider'
 import {
   Container,
   Arrow,
@@ -16,20 +17,14 @@ import {
 } from './Slider.style'
 
 const Slider: React.FC = (): JSX.Element => {
-  const [slideIndex, setSlideIndex] = useState(0)
-
-  const handleClick = (direction: string) => {
-    // FIXME: 전달받은 배열의 마지막 요소 인덱스 추가
-    if (direction === 'left') {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
-    } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0)
-    }
-  }
+  const [slideIndex, changeSlide] = useSlider(
+    0,
+    sliderItems.length /* FIXME: 서버로부터 전달받은 slide 배열의 length 전달 */,
+  )
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => handleClick('left')}>
+      <Arrow direction="left" onClick={() => changeSlide('left')}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
@@ -46,7 +41,7 @@ const Slider: React.FC = (): JSX.Element => {
           </Slide>
         ))}
       </Wrapper>
-      <Arrow direction="right" onClick={() => handleClick('right')}>
+      <Arrow direction="right" onClick={() => changeSlide('right')}>
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
