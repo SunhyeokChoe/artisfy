@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined'
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
-import { sliderItems, ISliderItems } from 'constants/fake/sliderItems'
+import { sliderItems, ISliderItems } from 'constants/fake/data'
 import {
   Container,
   Arrow,

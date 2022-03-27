@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  height: 100%;
+  background-color: #000000;
+  color: white;
 `
 
 export const Left = styled.div`
@@ -28,11 +31,13 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
-  padding: 5px;
+  border-color: #212121;
+  height: 30px;
 `
 
 export const Input = styled.input`
   border: none;
+  height: 100%;
 `
 
 export const Center = styled.div`

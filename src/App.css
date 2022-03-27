@@ -10,6 +10,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: 'Urbanist', sans-serif;
 }
 
 html {
@@ -17,7 +18,6 @@ html {
 }
 
 body {
-  font-family: 'Urbanist', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

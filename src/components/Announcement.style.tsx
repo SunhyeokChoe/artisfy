@@ -7,6 +7,6 @@ export const Container = styled.div`
   font-size: 14px;
   font-weight: 500;
   height: 30px;
-  background-color: #00685b;
+  background-color: #212121;
   color: white;
 `

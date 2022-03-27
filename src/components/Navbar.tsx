@@ -22,17 +22,18 @@ const Navbar: React.FC = (): JSX.Element => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
+          <Language>KO</Language>
           <SearchContainer>
-            <Input /> <SearchIcon style={{ color: 'gray', fontSize: 16 }} />
+            <Input />
+            <SearchIcon style={{ color: 'white', fontSize: 16, height: '30px', width: '30px' }} />
           </SearchContainer>
         </Left>
         <Center>
           <Logo>Artisfy</Logo>
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>회원가입</MenuItem>
+          <MenuItem>로그인</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlinedIcon />
