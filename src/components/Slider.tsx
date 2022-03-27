@@ -14,17 +14,17 @@ import {
   Title,
   Desc,
   Button,
-} from './Slider.style'
+} from './styles/Slider.style'
 
 const Slider: React.FC = (): JSX.Element => {
-  const [slideIndex, changeSlide] = useSlider(
+  const [slideIndex, nextSlide, prevSlide] = useSlider(
     0,
     sliderItems.length /* FIXME: 서버로부터 전달받은 slide 배열의 length 전달 */,
   )
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => changeSlide('left')}>
+      <Arrow direction="left" onClick={() => nextSlide}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
@@ -41,7 +41,7 @@ const Slider: React.FC = (): JSX.Element => {
           </Slide>
         ))}
       </Wrapper>
-      <Arrow direction="right" onClick={() => changeSlide('right')}>
+      <Arrow direction="right" onClick={() => prevSlide}>
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>

@@ -14,5 +14,8 @@ if (process.env.NODE_ENV === 'development') {
     tracesSampleRate: 1.0,
   })
 
-  console.log('%cSentry is working.', 'color: #BA87F3; font-size: 30px; font-weight: bold; font-style: oblique;')
+  console.log(
+    '%cSentry is working.',
+    'color: #BA87F3; font-size: 30px; font-weight: bold; font-style: oblique;',
+  )
 }

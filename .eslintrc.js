@@ -1,7 +1,20 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['react', 'jsx-a11y', 'import', '@typescript-eslint', 'jest', 'prettier'],
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:jest/recommended', 'prettier'],
+  plugins: [
+    'react',
+    'jsx-a11y',
+    'import',
+    '@typescript-eslint',
+    'jest',
+    'prettier',
+  ],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:jest/recommended',
+    'prettier',
+  ],
   env: {
     browser: true,
     es6: true,
@@ -25,7 +38,14 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        endOfLine: 'auto',
+        arrowParens: 'always',
+        singleQuote: true,
+        bracketSpacing: true,
+        semi: false,
+        endOfLine: 'lf',
+        tabWidth: 2,
+        printWidth: 80,
+        trailingComma: 'all',
       },
     ],
     // TypeScript

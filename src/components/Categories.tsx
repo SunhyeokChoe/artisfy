@@ -1,6 +1,6 @@
 import React from 'react'
 // import { categoryItems, ICategoryItems } from 'constants/fake/data'
-import { Container } from './Categories.style'
+import { Container } from './styles/Categories.style'
 // import CategoryItem from './CategoryItem'
 
 const Categories: React.FC = (): JSX.Element => {

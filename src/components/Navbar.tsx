@@ -15,7 +15,7 @@ import {
   Input,
   Logo,
   MenuItem,
-} from './Navbar.style'
+} from './styles/Navbar.style'
 
 const Navbar: React.FC = (): JSX.Element => {
   return (
@@ -25,7 +25,14 @@ const Navbar: React.FC = (): JSX.Element => {
           <Language>KO</Language>
           <SearchContainer>
             <Input />
-            <SearchIcon style={{ color: 'white', fontSize: 16, height: '30px', width: '30px' }} />
+            <SearchIcon
+              style={{
+                color: 'white',
+                fontSize: 16,
+                height: '30px',
+                width: '30px',
+              }}
+            />
           </SearchContainer>
         </Left>
         <Center>
