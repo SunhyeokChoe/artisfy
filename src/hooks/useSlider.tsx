@@ -9,7 +9,7 @@ const useSlider = (
 
   const nextSlide = useCallback(
     () =>
-      currSlideIdx > lastSlideIdx
+      currSlideIdx >= lastSlideIdx
         ? setCurrSlideIdx(0)
         : setCurrSlideIdx((prev) => prev + 1),
     [currSlideIdx, lastSlideIdx],
@@ -17,9 +17,9 @@ const useSlider = (
 
   const prevSlide = useCallback(
     () =>
-      currSlideIdx > lastSlideIdx
-        ? setCurrSlideIdx(0)
-        : setCurrSlideIdx((prev) => prev + 1),
+      currSlideIdx <= 0
+        ? setCurrSlideIdx(lastSlideIdx)
+        : setCurrSlideIdx((prev) => prev - 1),
     [currSlideIdx, lastSlideIdx],
   )
 

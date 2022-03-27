@@ -24,7 +24,7 @@ const Slider: React.FC = (): JSX.Element => {
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => nextSlide}>
+      <Arrow direction="left" onClick={prevSlide}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
@@ -41,7 +41,7 @@ const Slider: React.FC = (): JSX.Element => {
           </Slide>
         ))}
       </Wrapper>
-      <Arrow direction="right" onClick={() => prevSlide}>
+      <Arrow direction="right" onClick={nextSlide}>
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
