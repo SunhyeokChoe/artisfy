@@ -55,6 +55,8 @@ module.exports = {
     // React
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'react/prop-types': ['off', {}],
+    'react/require-default-props': 'off',
+    'react/no-unused-prop-types': 'off',
     'react/function-component-definition': [
       2,
       {

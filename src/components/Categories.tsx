@@ -1,15 +1,16 @@
 import React from 'react'
-// import { categoryItems, ICategoryItems } from 'constants/fake/data'
-import { Container } from './styles/Categories.style'
-// import CategoryItem from './CategoryItem'
+
+import { categoryItems } from 'constants/fake/data'
+import CategoryItem from './CategoryItem'
+import * as S from './styles/Categories.style'
 
 const Categories: React.FC = (): JSX.Element => {
   return (
-    <Container>
-      {/* {categoryItems.map((item: ICategoryItems) => (
-        <CategoryItem key={item.id} item={item} />
-      ))} */}
-    </Container>
+    <S.Container>
+      {categoryItems.map((item) => (
+        <CategoryItem key={item.id} img={item.img} title={item.title} />
+      ))}
+    </S.Container>
   )
 }
 

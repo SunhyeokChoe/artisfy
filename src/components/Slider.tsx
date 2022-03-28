@@ -1,20 +1,10 @@
 import React from 'react'
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined'
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
-import { sliderItems, ISliderItems } from 'constants/fake/data'
+import { sliderItems } from 'constants/fake/data'
 import useSlider from 'hooks/useSlider'
-import {
-  Container,
-  Arrow,
-  Wrapper,
-  Slide,
-  ImgContainer,
-  InfoContainer,
-  Image,
-  Title,
-  Desc,
-  Button,
-} from './styles/Slider.style'
+import Slide from 'components/Slide'
+import * as S from './styles/Slider.style'
 
 const Slider: React.FC = (): JSX.Element => {
   const [slideIndex, nextSlide, prevSlide] = useSlider(
@@ -23,28 +13,25 @@ const Slider: React.FC = (): JSX.Element => {
   )
 
   return (
-    <Container>
-      <Arrow direction="left" onClick={prevSlide}>
+    <S.Container>
+      <S.Arrow direction="left" onClick={prevSlide}>
         <ArrowLeftOutlinedIcon />
-      </Arrow>
-      <Wrapper slideIndex={slideIndex}>
-        {sliderItems.map((item: ISliderItems) => (
-          <Slide bg={item.bg} key={item.id}>
-            <ImgContainer>
-              <Image src={item.img} />
-            </ImgContainer>
-            <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.description}</Desc>
-              <Button>제품 보러가기</Button>
-            </InfoContainer>
-          </Slide>
+      </S.Arrow>
+      <S.Wrapper slideIndex={slideIndex}>
+        {sliderItems.map((item) => (
+          <Slide
+            key={item.id}
+            img={item.img}
+            title={item.title}
+            description={item.description}
+            bg={item.bg}
+          />
         ))}
-      </Wrapper>
-      <Arrow direction="right" onClick={nextSlide}>
+      </S.Wrapper>
+      <S.Arrow direction="right" onClick={nextSlide}>
         <ArrowRightOutlinedIcon />
-      </Arrow>
-    </Container>
+      </S.Arrow>
+    </S.Container>
   )
 }
 
