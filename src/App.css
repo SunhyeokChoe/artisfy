@@ -10,16 +10,14 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: 'Urbanist', sans-serif;
 }
 
 html {
   overflow-x: hidden;
-  width: 100vw;
 }
 
 body {
-  margin: 0;
-  font-family: 'Urbanist', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

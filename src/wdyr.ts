@@ -11,5 +11,8 @@ if (process.env.NODE_ENV === 'development') {
     logErrors: true,
   })
 
-  console.log('%cWDYR is working.', 'color: #0090C0; font-size: 30px; font-weight: bold; font-style: oblique;')
+  console.log(
+    '%cWDYR is working.',
+    'color: #0090C0; font-size: 30px; font-weight: bold; font-style: oblique;',
+  )
 }
