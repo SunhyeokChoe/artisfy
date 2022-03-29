@@ -36,46 +36,11 @@ export const categoryItems = [
   {
     id: 2,
     img,
-    title: '트레이닝/조거 팬츠',
+    title: '데님 팬츠',
   },
   {
     id: 3,
     img,
-    title: '데님 팬츠',
-  },
-  {
-    id: 4,
-    img,
-    title: '맨투맨/스웨트셔츠',
-  },
-  {
-    id: 5,
-    img,
-    title: '블루종/MA-1',
-  },
-  {
-    id: 6,
-    img,
-    title: '슈트/블레이저 재킷',
-  },
-  {
-    id: 7,
-    img,
-    title: '카디건',
-  },
-  {
-    id: 8,
-    img,
     title: '로퍼',
-  },
-  {
-    id: 9,
-    img,
-    title: '메신저/크로스 백',
-  },
-  {
-    id: 10,
-    img,
-    title: '향수/탈취',
   },
 ]

@@ -15,7 +15,7 @@ const Slider: React.FC = (): JSX.Element => {
   return (
     <S.Container>
       <S.Arrow direction="left" onClick={prevSlide}>
-        <ArrowLeftOutlinedIcon />
+        <ArrowLeftOutlinedIcon style={{ color: 'white' }} />
       </S.Arrow>
       <S.Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
@@ -29,7 +29,7 @@ const Slider: React.FC = (): JSX.Element => {
         ))}
       </S.Wrapper>
       <S.Arrow direction="right" onClick={nextSlide}>
-        <ArrowRightOutlinedIcon />
+        <ArrowRightOutlinedIcon style={{ color: 'white' }} />
       </S.Arrow>
     </S.Container>
   )
