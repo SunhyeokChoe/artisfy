@@ -10,8 +10,6 @@ export const Container = styled.div<{ bg: string }>`
 
 export const ImgContainer = styled.div`
   flex: 1;
-
-  height: 100%;
 `
 
 export const InfoContainer = styled.div`

@@ -22,7 +22,7 @@ export const Arrow = styled.div<{ direction: string }>`
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: #00685b;
+  background-color: #000000;
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
