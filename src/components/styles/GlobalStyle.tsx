@@ -18,8 +18,5 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Urbanist', sans-serif;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 `
