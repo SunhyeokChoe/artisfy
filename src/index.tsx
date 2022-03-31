@@ -1,14 +1,21 @@
 import './sentry'
 import './wdyr'
+
 import React, { StrictMode, Suspense, lazy } from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
 import reportWebVitals from './reportWebVitals'
 
 const App = lazy(() => import('./App'))
 
-ReactDOM.render(
+const rootElement = document.getElementById('root')
+
+if (!rootElement) throw new Error('Failed to find the root element')
+
+const root = ReactDOM.createRoot(rootElement)
+
+root.render(
   <Suspense fallback={<div />}>
     <BrowserRouter>
       <StrictMode>
@@ -16,7 +23,6 @@ ReactDOM.render(
       </StrictMode>
     </BrowserRouter>
   </Suspense>,
-  document.getElementById('root'),
 )
 
 // If you want to start measuring performance in your app, pass a function
