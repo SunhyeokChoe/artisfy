@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import reportWebVitals from './reportWebVitals'
 
-const App = lazy(() => import('./App'))
+const App = lazy(() => import('components/App'))
 
 const rootElement = document.getElementById('root')
 

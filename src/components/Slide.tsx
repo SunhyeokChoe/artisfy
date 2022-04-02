@@ -28,4 +28,4 @@ const Slide: React.FC<IProps> = ({
   )
 }
 
-export default Slide
+export default React.memo(Slide)
