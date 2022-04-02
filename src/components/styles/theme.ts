@@ -1,4 +1,4 @@
-// import device from 'components/styles/media'
+import media from './media'
 
 const pixelToRem = (size: number) => `${size / 16}rem`
 
@@ -30,10 +30,12 @@ const common = {
 }
 
 const theme = {
-  // device,
+  media,
   palette,
   fontSizes,
   common,
 }
+
+export type Theme = typeof theme
 
 export default theme
