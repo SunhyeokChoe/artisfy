@@ -1,8 +1,4 @@
-// REF: https://dkje.github.io/2020/10/13/StyledComponents/
-
 import media from './media'
-
-// const pixelToRem = (size: number) => `${size / 16}rem`
 
 const palette = {
   black: '#000000',
