@@ -9,9 +9,9 @@ interface IDeviceMediaQuery {
  * @constant
  */
 const deviceSizes: IDeviceMediaQuery = {
-  sm: '576px',
+  sm: '480px',
   md: '768px',
-  lg: '992px',
+  lg: '1024px',
   xl: '1200px',
 }
 
@@ -38,7 +38,7 @@ export default (
   Object.keys(deviceSizes) as Array<keyof IDeviceMediaQuery>
 ).reduce((acc, key) => {
   acc[key] = (style: TemplateStringsArray) =>
-    `@media (min-width: ${deviceSizes[key]}) { ${style} }`
+    `@media (max-width: ${deviceSizes[key]}) { ${style} }`
 
   return acc
 }, {} as { [index: string]: (srt: TemplateStringsArray) => string })

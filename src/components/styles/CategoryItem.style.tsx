@@ -11,6 +11,9 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${({ theme }) => theme.media.sm`
+    height: '20vh'
+  `}
 `
 
 export const Info = styled.div`

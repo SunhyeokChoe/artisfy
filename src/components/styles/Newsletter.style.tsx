@@ -18,7 +18,7 @@ export const Desc = styled.div`
   font-weight: 300;
   margin-bottom: 20px;
   ${({ theme }) => theme.media.sm`
-    textAlign: 'center'
+    text-align: center
   `}
 `
 
@@ -30,7 +30,7 @@ export const InputContainer = styled.div`
   justify-content: space-between;
   border: 1px solid lightgray;
   ${({ theme }) => theme.media.sm`
-    width: '80%'
+    width: 80%
   `}
 `
 
