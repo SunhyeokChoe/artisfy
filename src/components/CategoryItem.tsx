@@ -1,5 +1,6 @@
 import React from 'react'
 
+// import * as GS from './styles/GlobalStyle'
 import * as S from './styles/CategoryItem.style'
 
 interface IProps {
