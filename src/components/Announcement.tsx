@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as S from './styles/Announcement.style'
+import * as S from 'components/styles/Announcement.style'
 
 const Announcement: React.FC = (): JSX.Element => {
   return (

@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import Badge from '@mui/material/Badge'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 
-import * as S from './styles/Navbar.style'
+import * as S from 'components/styles/Navbar.style'
 
 const Navbar: React.FC = (): JSX.Element => {
   return (
