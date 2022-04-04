@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from './styles/Slide.style'
+import * as S from 'components/styles/Slide.style'
 
 interface IProps {
   img: string

@@ -4,7 +4,7 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
 import { sliderItems } from 'constants/fake/data'
 import useSlider from 'hooks/useSlider'
 import Slide from 'components/Slide'
-import * as S from './styles/Slider.style'
+import * as S from 'components/styles/Slider.style'
 
 const Slider: React.FC = (): JSX.Element => {
   const [slideIndex, nextSlide, prevSlide] = useSlider(
