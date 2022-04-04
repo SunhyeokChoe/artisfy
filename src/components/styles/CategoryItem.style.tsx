@@ -12,7 +12,7 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   ${({ theme }) => theme.media.sm`
-    height: '20vh'
+    height: 20vh
   `}
 `
 
