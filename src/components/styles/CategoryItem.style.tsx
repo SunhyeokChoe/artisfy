@@ -14,10 +14,8 @@ export const Image = styled.img`
 `
 
 export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${({ theme }) => theme.common.flexColumnCenter};
+
   position: absolute;
   top: 0;
   left: 0;

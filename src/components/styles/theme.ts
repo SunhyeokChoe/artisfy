@@ -16,15 +16,15 @@ const fontSizes = {
 }
 
 const common = {
-  flexCenter: `
+  flexRowCenter: `
     display: flex;
-    justify-contents: center;
+    justify-content: center;
     align-items: center;
   `,
-  flexCenterColumn: `
+  flexColumnCenter: `
     display: flex;
     flex-direction: column;
-    justify-contents: center;
+    justify-content: center;
     align-items: center;
   `,
 }
