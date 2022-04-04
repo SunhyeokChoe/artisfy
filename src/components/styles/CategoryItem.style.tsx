@@ -31,4 +31,16 @@ export const Title = styled.h1`
   margin-bottom: 20px;
 `
 
-export const Button = styled.button``
+export const Button = styled.button`
+  all: unset;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.5em 2em;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+  }
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`

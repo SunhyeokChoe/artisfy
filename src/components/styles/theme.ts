@@ -5,6 +5,7 @@ const palette = {
   gray: '#999999',
   green: '#3cb46e',
   blue: '#000080',
+  white: '#FFFFFF',
 }
 
 const lightThemePalette = {

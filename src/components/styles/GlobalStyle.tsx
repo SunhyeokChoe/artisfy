@@ -27,6 +27,20 @@ export const Container = styled.div`
   ${({ theme }) => theme.common.flexColumnCenter};
 `
 
+export const Button = styled.button`
+  all: unset;
+  border: 1px solid #000000;
+  padding: 0.5em 2em;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`
+
 // export const Title = styled.h1`
 //   font-size: ${({ theme }) => theme.fontSizes.title};
 //   color: ${({ theme }) => theme.palette.gray};
@@ -40,20 +54,6 @@ export const Container = styled.div`
 // export const Paragraph = styled.p`
 //   font-size: ${({ theme }) => theme.fontSizes.paragraph};
 //   color: ${({ theme }) => theme.palette.blue};
-// `
-
-// export const Button = styled.button`
-//   all: unset;
-//   border: 1px solid ${({ theme }) => theme.palette.black};
-//   padding: 0.5em 2em;
-//   &:hover {
-//     transition: all 0.3s ease-in-out;
-//     background-color: ${({ theme }) => theme.palette.black};
-//     color: #ffffff;
-//   }
-//   font-size: 20px;
-//   background-color: transparent;
-//   cursor-pointer: pointer;
 // `
 
 // export const Button = styled.button<{

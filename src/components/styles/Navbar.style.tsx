@@ -40,13 +40,13 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
-  padding: 5px;
   border-color: #212121;
 `
 
 export const Input = styled.input`
   border: none;
   width: 100%;
+  height: 32px;
 
   ${({ theme }) => theme.media.sm`
     display: none;

@@ -10,6 +10,15 @@ export const Container = styled.div<{ bg: string }>`
 
 export const ImgContainer = styled.div`
   flex: 1;
+
+  height: 100%;
+`
+
+export const Image = styled.img<{ src: string; alt?: string }>`
+  height: 80%;
+
+  src: ${(props) => props.src};
+  alt: ${(props) => props.alt ?? 'clothes'};
 `
 
 export const InfoContainer = styled.div`
@@ -40,12 +49,5 @@ export const Button = styled.button`
   }
   font-size: 20px;
   background-color: transparent;
-  cursor-pointer: pointer;
-`
-
-export const Image = styled.img<{ src: string; alt?: string }>`
-  width: 100%;
-  height: 80%;
-  src: ${(props) => props.src};
-  alt: ${(props) => props.alt ?? 'clothes'};
+  cursor: pointer;
 `
